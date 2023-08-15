@@ -22,7 +22,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             prev.setOnClickListener {
                 bindMatch(DataManager.getPrevMatch())
             }
-
         }
     }
 
@@ -37,10 +36,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         bindMatch(DataManager.getCurrentMatch())
     }
 
-//    search_view.setOnQueryTextListener( object : SearchView.OnQueryTextListener{
-//         fun onQueryTextSubmit(p0: String?): Boolean {
-//            return true
-//        }
     private fun bindMatch(match: Match) {
         bindingV.apply {
             date.text=match.matchDate
